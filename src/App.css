@@ -1,33 +1,77 @@
-.App {
-  text-align: center;
+/* more saturated palette */
+:root {
+	--green: #205c20;
+	--dark-green: #0f460f;
+	--brown: #734d28;
+	--darkblue: #17505c;
+	--midblue: #1c8ca2;
+	--beige: #d0c885;
+	--lightblack: #363e3e;
+	--background: var(--darkblue);
+	--content: var(--beige);
+	--menu: var(--midblue);
+	--text: var(--lightblack);
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+main {
+	display: flex;
+	padding: 10px;
+	/* height: 100vh; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.intro-pane,
+.details-pane {
+	background-color: var(--menu);
 }
 
-.App-link {
-  color: #61dafb;
+.contact-pane {
+	background-color: #ff6f61;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.intro-pane img {
+	width: 250px;
+	padding: 10px;
+}
+
+.details-pane {
+	background-color: var(--content);
+	height: 100%;
+}
+
+p.about,
+li {
+  margin-top:10px;
+  padding: 10px;
+}
+
+p.about {
+	margin-left: 40px;
+}
+
+li {
+	list-style: none;
+}
+
+li img {
+	/* i want this to have the image go across specified percentage of parent container */
+	max-width: 70%;
+	height: auto;
+	width: auto;
+}
+
+a {
+	color: black;
+}
+
+@media screen and (max-width: 800px) {
+	main {
+		flex-direction: column;
+		justify-content: center;
+	}
+	.intro-pane img {
+		align-content: center;
+	}
+	li img {
+		max-width: 235px;
+	}
 }
