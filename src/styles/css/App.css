@@ -1,0 +1,56 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+/* more saturated palette */
+* {
+  font-family: "Roboto";
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.portfolio-intro-pane {
+  background-color: #1c8ca2;
+  padding: 16px;
+}
+
+.portfolio-intro-pane__name {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.portfolio-intro-pane__occupation {
+  font-size: 2rem;
+  line-height: 2.25rem;
+}
+
+.portfolio-image {
+  padding-left: 16px;
+  padding-right: 16px;
+  width: 288px;
+}
+
+.portfolio-details-pane {
+  background-color: #d0c885;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 24px;
+  line-height: 1.5rem;
+  font-size: 1.25rem;
+}
+
+.portfolio-projects-list {
+  list-style: none;
+  width: 375px;
+}
+
+.portfolio-project-screenshot {
+  width: 280px;
+}
+
+.portfolio-contact-pane {
+  background-color: #ff6f61;
+  padding: 16px;
+}
+
+/*# sourceMappingURL=App.css.map */

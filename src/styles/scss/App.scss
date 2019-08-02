@@ -1,0 +1,109 @@
+@import "../../../node_modules/normalize.css/normalize.css";
+/* more saturated palette */
+$green: #205c20;
+$dark-green: #0f460f;
+$brown: #734d28;
+
+$beige: #d0c885;
+$lightblack: #363e3e;
+$content: $beige;
+$text: $lightblack;
+$livingcoral: #ff6f61;
+
+$midblue: #1c8ca2;
+
+* {
+	font-family: "Roboto";
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-phone: 375px;
+
+// Small tablets (portrait view)
+$screen-tablet: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+	@media (min-width: #{$screen-phone}) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: #{$screen-tablet}) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: #{$screen-lg-min}) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl {
+	@media (min-width: #{$screen-xl-min}) {
+		@content;
+	}
+}
+
+.portfolio-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.portfolio-intro-pane {
+	background-color: $midblue;
+	padding: 16px;
+}
+
+.portfolio-intro-pane__name {
+	font-size: 2rem;
+	line-height: 2.25rem;
+}
+
+.portfolio-intro-pane__occupation {
+	font-size: 2rem;
+	line-height: 2.25rem;
+}
+
+.portfolio-image {
+	padding-left: 16px;
+	padding-right: 16px;
+	width: 288px;
+}
+
+.portfolio-details-pane {
+	background-color: $content;
+	padding-left: 16px;
+	padding-right: 16px;
+	margin-top: 24px;
+	line-height: 1.5rem;
+	font-size: 1.25rem;
+}
+
+.portfolio-projects-list {
+	list-style: none;
+	width: 375px;
+}
+
+.portfolio__project {
+}
+
+.portfolio-project-screenshot {
+	width: 280px;
+}
+
+.portfolio-contact-pane {
+	background-color: $livingcoral;
+	padding: 16px;
+}
