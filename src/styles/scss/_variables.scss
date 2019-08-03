@@ -1,0 +1,57 @@
+$green: #205c20;
+$dark-green: #0f460f;
+$brown: #734d28;
+$beige: #d0c885;
+$lightblack: #363e3e;
+$text: $lightblack;
+$livingcoral: #ff6f61;
+
+$midblue: #1c8ca2;
+
+* {
+	font-family: "Roboto";
+}
+
+a {
+	display: block;
+}
+
+// Small tablets and large smartphones (landscape view)
+$screen-phone: 375px;
+
+// Small tablets (portrait view)
+$screen-tablet: 768px;
+
+// Tablets and small desktops
+$screen-lg-min: 992px;
+
+// Large tablets and desktops
+$screen-xl-min: 1200px;
+
+// Small devices
+@mixin sm {
+	@media (min-width: $screen-phone) {
+		@content;
+	}
+}
+
+// Medium devices
+@mixin md {
+	@media (min-width: $screen-tablet) {
+		@content;
+	}
+}
+
+// Large devices
+@mixin lg {
+	@media (min-width: $screen-lg-min) {
+		@content;
+	}
+}
+
+// Extra large devices
+@mixin xl {
+	@media (min-width: $screen-xl-min) {
+		@content;
+	}
+}

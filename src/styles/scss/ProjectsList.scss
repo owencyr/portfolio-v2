@@ -1,10 +1,19 @@
+@import "_variables.scss";
 .portfolio-projects-list {
 	list-style: none;
-	width: 375px;
+	padding-bottom: 32px;
+}
+
+.portfolio--project-light {
+	background-color: lighten($beige, 5%);
+}
+
+.portfolio--project-dark {
+	background-color: darken($beige, 5%);
 }
 
 .portfolio-project-screenshot {
-	width: 280px;
+	max-width: 280px;
 }
 
 .portfolio-project-tech__icon {

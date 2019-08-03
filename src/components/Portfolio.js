@@ -1,6 +1,5 @@
 import React from "react";
 import ProjectsList from "./ProjectsList";
-import "../styles/css/App.css";
 
 export default function Portfolio() {
 	return (
@@ -20,18 +19,19 @@ export default function Portfolio() {
 				</p>
 				<div className="portfolio-projects-list">
 					<h2 className="portfolio-projects-list-header">Projects</h2>
-					<ProjectsList />
-					<ul className="list" />
+					<div className="portfolio-projects-list-container">
+						<ProjectsList />
+					</div>
 				</div>
 			</section>
-			<section className="contact-pane">
+			<section className="portfolio-contact-pane">
 				<a href="https://github.com/owencyr">
 					<i className="fab fa-github-square" />
 				</a>
 				<a href="https://www.linkedin.com/in/cyroc/">
 					<i className="fab fa-linkedin" />
 				</a>
-				<a href="mailto:cyroc@dukes.jmu.edu">
+				<a href="mailto:cyrowenwork@gmail.com">
 					<i className="fas fa-envelope-square" />
 				</a>
 			</section>

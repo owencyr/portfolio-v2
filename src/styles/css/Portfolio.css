@@ -1,33 +1,3 @@
-@import "../../../node_modules/normalize.css/normalize.css";
-* {
-  font-family: "Roboto";
-}
-
-a {
-  display: block;
-}
-
-.portfolio-projects-list {
-  list-style: none;
-  padding-bottom: 32px;
-}
-
-.portfolio--project-light {
-  background-color: #d7d097;
-}
-
-.portfolio--project-dark {
-  background-color: #c9c073;
-}
-
-.portfolio-project-screenshot {
-  max-width: 280px;
-}
-
-.portfolio-project-tech__icon {
-  padding-right: 12px;
-}
-
 * {
   font-family: "Roboto";
 }
@@ -81,4 +51,4 @@ a {
   padding: 16px;
 }
 
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=portfolio.css.map */
