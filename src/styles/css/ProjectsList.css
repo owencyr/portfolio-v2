@@ -1,0 +1,14 @@
+.portfolio-projects-list {
+  list-style: none;
+  width: 375px;
+}
+
+.portfolio-project-screenshot {
+  width: 280px;
+}
+
+.portfolio-project-tech__icon {
+  padding-right: 12px;
+}
+
+/*# sourceMappingURL=projectslist.css.map */

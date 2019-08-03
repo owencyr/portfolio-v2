@@ -1,7 +1,10 @@
 @import "../../../node_modules/normalize.css/normalize.css";
-/* more saturated palette */
 * {
   font-family: "Roboto";
+}
+
+a {
+  display: block;
 }
 
 .portfolio-container {
@@ -34,18 +37,8 @@
   background-color: #d0c885;
   padding-left: 16px;
   padding-right: 16px;
-  margin-top: 24px;
   line-height: 1.5rem;
   font-size: 1.25rem;
-}
-
-.portfolio-projects-list {
-  list-style: none;
-  width: 375px;
-}
-
-.portfolio-project-screenshot {
-  width: 280px;
 }
 
 .portfolio-contact-pane {

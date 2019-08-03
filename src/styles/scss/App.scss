@@ -1,9 +1,7 @@
 @import "../../../node_modules/normalize.css/normalize.css";
-/* more saturated palette */
 $green: #205c20;
 $dark-green: #0f460f;
 $brown: #734d28;
-
 $beige: #d0c885;
 $lightblack: #363e3e;
 $content: $beige;
@@ -14,6 +12,10 @@ $midblue: #1c8ca2;
 
 * {
 	font-family: "Roboto";
+}
+
+a {
+	display: block;
 }
 
 // Small tablets and large smartphones (landscape view)
@@ -30,28 +32,28 @@ $screen-xl-min: 1200px;
 
 // Small devices
 @mixin sm {
-	@media (min-width: #{$screen-phone}) {
+	@media (min-width: $screen-phone) {
 		@content;
 	}
 }
 
 // Medium devices
 @mixin md {
-	@media (min-width: #{$screen-tablet}) {
+	@media (min-width: $screen-tablet) {
 		@content;
 	}
 }
 
 // Large devices
 @mixin lg {
-	@media (min-width: #{$screen-lg-min}) {
+	@media (min-width: $screen-lg-min) {
 		@content;
 	}
 }
 
 // Extra large devices
 @mixin xl {
-	@media (min-width: #{$screen-xl-min}) {
+	@media (min-width: $screen-xl-min) {
 		@content;
 	}
 }
@@ -86,21 +88,8 @@ $screen-xl-min: 1200px;
 	background-color: $content;
 	padding-left: 16px;
 	padding-right: 16px;
-	margin-top: 24px;
 	line-height: 1.5rem;
 	font-size: 1.25rem;
-}
-
-.portfolio-projects-list {
-	list-style: none;
-	width: 375px;
-}
-
-.portfolio__project {
-}
-
-.portfolio-project-screenshot {
-	width: 280px;
 }
 
 .portfolio-contact-pane {
