@@ -4,6 +4,10 @@
 	padding-bottom: 32px;
 }
 
+.portfolio-project {
+	padding: 16px;
+}
+
 .portfolio--project-light {
 	background-color: lighten($beige, 5%);
 }
@@ -13,7 +17,15 @@
 }
 
 .portfolio-project-screenshot {
-	max-width: 280px;
+	max-width: 450px;
+}
+
+.portfolio-project-description-paragraph {
+	max-width: 450px;
+}
+
+.portfolio-project-link {
+	display: block;
 }
 
 .portfolio-project-tech__icon {

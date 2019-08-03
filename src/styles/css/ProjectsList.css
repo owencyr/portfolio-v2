@@ -2,13 +2,13 @@
   font-family: "Roboto";
 }
 
-a {
-  display: block;
-}
-
 .portfolio-projects-list {
   list-style: none;
   padding-bottom: 32px;
+}
+
+.portfolio-project {
+  padding: 16px;
 }
 
 .portfolio--project-light {
@@ -20,7 +20,15 @@ a {
 }
 
 .portfolio-project-screenshot {
-  max-width: 280px;
+  max-width: 450px;
+}
+
+.portfolio-project-description-paragraph {
+  max-width: 450px;
+}
+
+.portfolio-project-link {
+  display: block;
 }
 
 .portfolio-project-tech__icon {

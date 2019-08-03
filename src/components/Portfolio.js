@@ -5,9 +5,17 @@ export default function Portfolio() {
 	return (
 		<div className="portfolio-container">
 			<section className="portfolio-intro-pane">
-				<p className="portfolio-intro-pane__name">Owen Cyr</p>
-				<p className="portfolio-intro-pane__occupation">Full-Stack Developer</p>
-				<img className="portfolio-image" src="selfphoto.jpg" alt="Owen Cyr" />
+				<div className="portfolio-intro-pane__name-container">
+					<p className="portfolio-intro-pane__name">Owen Cyr</p>
+					<p className="portfolio-intro-pane__occupation">
+						Full-Stack Developer
+					</p>
+				</div>
+				<img
+					className="portfolio-image"
+					src="selfphotosmaller.jpg"
+					alt="Owen Cyr"
+				/>
 			</section>
 			<section className="portfolio-details-pane">
 				<p className="portfolio-details__about">

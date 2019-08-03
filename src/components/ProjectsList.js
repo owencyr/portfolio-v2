@@ -1,6 +1,5 @@
 import React from "react";
 import projects from "./PROJECTS";
-import "../styles/css/ProjectsList.css";
 
 export default function ProjectsList(props) {
 	const renderTechIcons = iconClassNames => {
