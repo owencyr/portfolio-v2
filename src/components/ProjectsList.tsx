@@ -1,9 +1,12 @@
 import React from "react";
-import projects from "./PROJECTS.tsx";
+//Data Store
+import PROJECTS from "./PROJECTS";
+//Type
+import { IProjectDetails } from "./PROJECTS";
 
 export default function ProjectsList() {
-	const renderTechIcons = iconClassNames => {
-		return iconClassNames.map((item, index) => {
+	const renderTechIcons = (iconClassNames: string[]) => {
+		return iconClassNames.map((item: string, index: number) => {
 			return (
 				<i
 					key={`${index}`}
@@ -13,8 +16,8 @@ export default function ProjectsList() {
 		});
 	};
 
-	const readDescription = description => {
-		return description.map((item, index) => {
+	const readDescription = (description: string[]) => {
+		return description.map((item: string, index: number) => {
 			return (
 				<p className="portfolio-project-description-paragraph" key={`${index}`}>
 					{item}
@@ -24,7 +27,7 @@ export default function ProjectsList() {
 	};
 
 	const renderProjects = () => {
-		return projects.map((item, index) => {
+		return PROJECTS.map((item: IProjectDetails, index: number) => {
 			const { title, link, screenshot, tech, description, repo } = item;
 			return (
 				<li

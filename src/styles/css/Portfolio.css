@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto";
+  font-family: "Fira Code";
 }
 
 .portfolio-container {
@@ -37,11 +37,12 @@
 }
 
 .portfolio-details-pane {
-  background-color: #d0c885;
+  background-color: #133353;
   padding-left: 16px;
   padding-right: 16px;
   line-height: 1.5rem;
   font-size: 1.25rem;
+  color: #728ca6;
 }
 
 .portfolio-projects-list-container {
@@ -60,4 +61,4 @@
   padding: 16px;
 }
 
-/*# sourceMappingURL=portfolio.css.map */
+/*# sourceMappingURL=Portfolio.css.map */

@@ -1,6 +1,6 @@
 @import "../../../node_modules/normalize.css/normalize.css";
 * {
-  font-family: "Roboto";
+  font-family: "Fira Code";
 }
 
 .portfolio-projects-list {
@@ -10,18 +10,28 @@
 
 .portfolio-project {
   padding: 16px;
+  text-align: center;
 }
 
 .portfolio--project-light {
-  background-color: #d7d097;
+  background-color: #184068;
 }
 
 .portfolio--project-dark {
-  background-color: #c9c073;
+  background-color: #0e263e;
 }
 
 .portfolio-project-screenshot {
-  max-width: 450px;
+  max-width: 320px;
+}
+@media (min-width: 768px) {
+  .portfolio-project-screenshot {
+    max-width: 450px;
+  }
+}
+
+.portfolio-project-desc {
+  text-align: left;
 }
 
 .portfolio-project-description-paragraph {
@@ -37,7 +47,7 @@
 }
 
 * {
-  font-family: "Roboto";
+  font-family: "Fira Code";
 }
 
 .portfolio-container {
@@ -75,11 +85,12 @@
 }
 
 .portfolio-details-pane {
-  background-color: #d0c885;
+  background-color: #133353;
   padding-left: 16px;
   padding-right: 16px;
   line-height: 1.5rem;
   font-size: 1.25rem;
+  color: #728ca6;
 }
 
 .portfolio-projects-list-container {

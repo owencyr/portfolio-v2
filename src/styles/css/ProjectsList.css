@@ -1,5 +1,5 @@
 * {
-  font-family: "Roboto";
+  font-family: "Fira Code";
 }
 
 .portfolio-projects-list {
@@ -9,18 +9,28 @@
 
 .portfolio-project {
   padding: 16px;
+  text-align: center;
 }
 
 .portfolio--project-light {
-  background-color: #d7d097;
+  background-color: #184068;
 }
 
 .portfolio--project-dark {
-  background-color: #c9c073;
+  background-color: #0e263e;
 }
 
 .portfolio-project-screenshot {
-  max-width: 450px;
+  max-width: 320px;
+}
+@media (min-width: 768px) {
+  .portfolio-project-screenshot {
+    max-width: 450px;
+  }
+}
+
+.portfolio-project-desc {
+  text-align: left;
 }
 
 .portfolio-project-description-paragraph {

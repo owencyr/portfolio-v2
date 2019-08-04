@@ -6,18 +6,27 @@
 
 .portfolio-project {
 	padding: 16px;
+	text-align: center;
 }
 
 .portfolio--project-light {
-	background-color: lighten($beige, 5%);
+	background-color: lighten($navy, 5%);
 }
 
 .portfolio--project-dark {
-	background-color: darken($beige, 5%);
+	background-color: darken($navy, 5%);
 }
 
 .portfolio-project-screenshot {
-	max-width: 450px;
+	max-width: 320px;
+	@include md {
+		max-width: 450px;
+	}
+}
+
+.portfolio-project-desc {
+	// max-width: 500px;
+	text-align: left;
 }
 
 .portfolio-project-description-paragraph {
